@@ -1,0 +1,1287 @@
+﻿header {
+    background-color: #AE181C;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover, a:focus {
+        text-decoration: none;
+    }
+
+.margin-r-5 {
+    margin-right: 5px;
+}
+
+.padding-l-23 {
+    padding-left: 23px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: #FFFFFF;
+    margin: 15px 20px -1px 15px;
+    padding: 15px 0px;
+    font-weight: 900;
+}
+
+    .navbar-brand:focus, .navbar-brand:hover {
+        color: #FFFFFF;
+    }
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.avatar {
+    margin: 10px;
+}
+
+.user-name {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-top: 23px;
+}
+
+.navbar-right {
+    margin-right: 10px;
+}
+
+.navbar-nav li {
+    text-align: center;
+}
+
+.navbar-nav a {
+    background-color: rgba(225, 33, 39, 0.6);
+    font-size: 18px;
+    color: #FFFFFF;
+    border-radius: 6px;
+    margin: 1px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-top: 20px;
+    min-width: 160px;
+}
+
+    .navbar-nav a.action {
+        min-width: 196px !important;
+    }
+
+
+    .navbar-nav a:hover, .navbar-nav a:focus, .navbar-nav a.action {
+        background-color: #E12127 !important;
+    }
+
+    .navbar-nav a.can-close:hover i:before {
+        content: "\f00d";
+    }
+
+    .navbar-nav a .badge {
+        position: absolute;
+        top: -10px;
+        background-color: #0B9EFF;
+        right: 0px;
+        padding: 3px 7px;
+        font-size: 18px;
+        text-align: center;
+        font-style: normal;
+        border-radius: 25px;
+    }
+
+    .navbar-nav a.action .badge {
+        display: none;
+    }
+
+.groupbtn {
+    background-color: #f3f3f3;
+    position: absolute;
+    margin: 0px 0px 10px -43px;
+}
+
+.menu {
+    background-color: #F3F3F3;
+}
+
+.fa-bars {
+    padding: 10px 0px 0px 0px;
+    color: #FFF;
+}
+
+.btn-group {
+    margin: 20px 0px;
+}
+
+.btn-group-lg > .btn {
+    border-radius: 4px;
+    width: 175px;
+}
+
+.table-border {
+    border-top: 1px solid #dbddd7;
+}
+
+.ticket-count {
+    font-size: 24px;
+    color: #656565;
+}
+
+.ticket-text {
+    font-size: 16px;
+    color: #7e7e7e;
+}
+
+.ticket-status {
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 2px 5px;
+    border-radius: 25px;
+}
+
+.ticket-open {
+    background-color: #4A90E2;
+}
+
+.pending {
+    background-color: #f5a623;
+}
+
+.closed {
+    background-color: #aab2bd;
+}
+
+.fa-icon {
+    color: #aeaeae;
+    padding: 0px 5px 0px 0px;
+}
+
+.fontcolor {
+    color: #000000;
+    font-weight: bold;
+}
+
+.fontcolor1 {
+    color: #656565;
+}
+
+.calling-window .modal-dialog {
+    max-width: 400px !important;
+}
+
+.modal-content {
+    border-radius: 0px !important;
+    border: none;
+    background-color: rgba(64,64,64,.9) !important;
+}
+
+modal-top {
+    padding: 25px 0px 0px 135px !important;
+    border-bottom: 0px solid #e5e5e5 !important;
+}
+
+button.close {
+    padding: 5px 10px !important;
+}
+
+.modalh4 {
+    color: #FFF !important;
+    font-size: 22px;
+}
+
+.calling-window .modal-body {
+    text-align: center;
+}
+
+.name {
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    font-size: 26px;
+    color: #FFF;
+}
+
+.ac-no {
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.phone-no {
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.btn-change {
+    width: 126px;
+    border-radius: 30px;
+    background-color: #6ed65b;
+    border-color: #6ed65b;
+    text-align: center;
+    margin: 15px 10px !important;
+}
+
+    .btn-change:hover, .btn-change:focus {
+        background-color: rgba(110, 214, 91, 0.6) !important;
+        border-color: #73b167 !important;
+    }
+
+.btn-callend {
+    background-color: #e12127;
+    border-color: #e12127;
+    border-radius: 30px;
+    width: 126px;
+    text-align: center;
+    margin: 15px 10px !important;
+}
+
+    .btn-callend:hover, .btn-callend:focus {
+        background-color: rgba(225, 33, 39, 0.6) !important;
+        border-color: #b84448 !important;
+    }
+
+.modal-foot {
+    border: 0px solid;
+    text-align: center;
+    padding: 0px 15px 15px 15px;
+}
+
+.premiere {
+    position: relative;
+    padding: 5px 11px 5px 11px;
+    background-color: #f5a623;
+    color: #231f20;
+    margin: 0px;
+    font-size: 15px;
+    text-align: right;
+}
+
+.phonecall {
+    -ms-transform: rotate(135deg) !important;
+    -webkit-transform: rotate(135deg) !important;
+    transform: rotate(135deg) !important;
+}
+
+.modal-open .modal {
+    background-color: rgba(0,0,0,.2);
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        margin-bottom: -2px;
+    }
+
+    .modal {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar-nav a {
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    .navbar-nav {
+        margin: 10px -10px 0px 15px;
+    }
+
+    .navbar-right li {
+        float: left;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    .navbar-brand {
+        width: 100%;
+        margin-top: -55px;
+    }
+
+    .btn-group-lg > .btn {
+        width: 95px;
+    }
+
+
+    .ticket-count {
+        font-size: 15px;
+    }
+
+    .ticket-text {
+        font-size: 11px;
+    }
+
+    .btn-group-lg > .btn, .btn-lg {
+        padding: 5px 5px;
+    }
+
+    .menu .container {
+        text-align: center;
+    }
+
+    .calling-window .modal-dialog {
+        max-width: 100% !important;
+    }
+}
+
+#setting {
+    margin-left: -30px;
+}
+
+    #setting > a {
+        min-width: inherit;
+        left: 40px;
+        position: relative;
+        top: -10px;
+        background-color: transparent !important;
+    }
+
+#userlist {
+    right: -40px;
+    top: 50px;
+}
+
+    #userlist a {
+        min-width: inherit;
+        background-color: transparent !important;
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+        #userlist a:hover {
+            background-color: #ededed !important;
+        }
+
+        #userlist a.active {
+            background-color: #e22222 !important;
+            color: #FFF;
+        }
+
+body {
+    padding: 0px !important;
+}
+
+.align {
+    padding: 0px;
+}
+
+.profile-edit {
+    display: none;
+}
+
+.profile-edit {
+    display: none;
+}
+
+.edit-userName:hover .profile-edit {
+    display: inline;
+}
+
+.name {
+    font-size: 24px !important;
+    color: #FFF;
+    padding: 0px;
+}
+
+.ac-no {
+    font-size: 20px;
+    color: #ddd;
+    padding: 0px;
+}
+
+.phone-no {
+    font-size: 20px;
+    color: #ddd;
+    padding: 0px;
+}
+
+.time {
+    font-size: 20px;
+    color: #ddd;
+    padding: 20px 0px 0px 0px;
+}
+
+.fa-icon {
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 50px;
+    margin-right: 10px;
+    background-color: #4a90e2;
+}
+
+.fa-micro-icon {
+    color: #FFFFFF;
+    padding: 10px 14px 10px 14px;
+    border-radius: 50px;
+    margin: 25px 15px 25px 15px;
+}
+
+.fa-phone-icon {
+    background-color: #d0021b;
+    color: #FFFFFF;
+    padding: 10px 14px 10px 14px;
+    border-radius: 50px;
+    margin: 25px 15px 25px 15px;
+    -ms-transform: rotate(135deg) !important; /* Internet Explorer 9 */
+    -webkit-transform: rotate(135deg) !important; /* Chrome, Safari, Opera */
+    transform: rotate(135deg) !important;
+}
+
+.fa-phonecall {
+    color: #4a90e2 !important;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+
+.call-time {
+    padding: 25px 0px 0px 0px !important;
+}
+
+.date-time-border {
+    border-bottom: 1px solid #e7e6e6;
+    position: relative;
+    top: 10px;
+    width: 100%;
+}
+
+.date-time {
+    background-color: #FFF;
+    position: relative;
+    padding: 0px 10px;
+    color: #7e7d7e;
+    font-size: 16px;
+}
+
+.nav-tabs {
+    background-color: #dddddd;
+}
+
+.tab-content {
+    background-color: #f3f3f3;
+}
+
+.nav-tabs > li {
+    width: 20%;
+    text-align: center;
+}
+
+
+    .nav-tabs > li > a {
+        color: #424a54;
+        font-size: 24px;
+        padding: 7px 10px;
+        margin-right: 0px;
+        line-height: 1.42857143;
+        border: 1px solid #C5c5c5;
+        border-radius: 0px 0px 0 0;
+    }
+
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+        border-bottom-color: #C5c5c5;
+    }
+
+
+.content-title {
+    padding: 20px 5px;
+    margin: 0px;
+    border-bottom: 1px solid #dbddd7;
+}
+
+.title-text {
+    color: #000000;
+    opacity: 0.3;
+    font-size: 20px;
+}
+
+.calling-list {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.content-text-light {
+    color: #787878;
+    font-size: 20px;
+}
+
+.content-text-black {
+    color: #2f2a2b;
+    font-size: 20px;
+}
+
+.flight-box {
+    background-color: #FFF;
+    border: 1px solid #e7e6e6;
+    border-radius: 3px;
+    padding: 10px 0px;
+    margin-top: 15px;
+    width: 400px;
+    cursor: pointer;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flight-box .light-title, .win-flight-box .light-title {
+    font-size: 12px;
+    color: #b1aca0;
+    text-transform: uppercase;
+}
+
+.flight-box > div, .win-flight-box > div {
+    padding: 3px 0px;
+}
+
+.flight-box .pull-right, .win-flight-box .pull-right {
+    padding-left: 10px;
+}
+
+.flight-box .title, .win-flight-box .title {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.font-35 {
+    font-size: 35px;
+    margin-top: -10px;
+}
+
+.font-18 {
+    font-size: 18px;
+    margin-top: -5px;
+}
+
+.font-14 {
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+.plane-icon {
+    text-align: center;
+    font-size: 40px;
+}
+
+.fa-rotate-45 {
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#flights {
+    padding: 0px 20px;
+}
+
+/*#flights .date-row {
+        margin-bottom: 10px;
+    }*/
+
+.serach-input-group {
+    font-size: 22px;
+    color: #BBBBBB;
+    padding: 20px 0px 15px 0px;
+}
+
+#serach-flight-addon {
+    background-color: #DDD;
+    font-size: 22px;
+    color: #BBBBBB;
+    border: none;
+    height: 49px;
+    cursor: pointer;
+}
+
+#message-enter-addon {
+    background-color: #e8e8e8;
+    font-size: 22px;
+    color: #7c7c7c;
+    border: none;
+    height: 49px;
+    cursor: pointer;
+}
+
+#serach-flight {
+    background-color: #DDD;
+    font-size: 22px;
+    color: #BBBBBB;
+    height: 49px;
+    border: none;
+    padding: 0px;
+}
+
+#message-enter {
+    background-color: #e8e8e8;
+    font-size: 22px;
+    color: #4a4a4a;
+    height: 49px;
+    border: none;
+    padding: 0px 10px;
+}
+
+#flights .date-border {
+    border-bottom: 1px solid #dddddd;
+    position: relative;
+    top: 10px;
+    width: 100%;
+}
+
+#flights .date {
+    font-size: 16px;
+    background-color: #f3f3f3;
+    color: #7e7d7e;
+    position: relative;
+    padding: 0px 30px;
+    width: 125px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.fligth-row {
+    padding: 0px;
+}
+
+    .fligth-row > div:nth-of-type(odd) {
+        padding-right: 30px;
+        padding-left: 0px;
+    }
+
+    .fligth-row > div:nth-of-type(even) {
+        padding-left: 30px;
+        padding-right: 0px;
+    }
+
+#flights .panel-heading {
+    background-color: #fff;
+    color: #231f20;
+    font-size: 12px;
+}
+
+    #flights .panel-heading .fa-angle-right {
+        font-size: 25px;
+        margin: -5px -5px 0px 10px;
+    }
+
+
+
+.padding-0 {
+    padding: 0px;
+}
+
+#flights .panel-body .short-code {
+    font-size: 27px;
+    color: #231f20;
+}
+
+#flights .panel-body .fa-plane {
+    font-size: 20px;
+    padding: 0px 5px;
+}
+
+#flights .filght-details {
+    font-size: 14px;
+    color: #231f20;
+}
+
+#flights .filght-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #B1AcA0;
+}
+
+.pas-title {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #4a4a4a;
+}
+
+.pas-details {
+    font-size: 30px;
+    color: #e12127;
+    font-weight: bold;
+}
+
+.profile-edit {
+    color: #000000;
+    opacity: 0.3;
+    text-decoration: none;
+}
+
+    .profile-edit:hover, .profile-edit:focus {
+        text-decoration: none;
+    }
+
+.tooltip-inner {
+    padding: 10px;
+    font-size: 18px;
+    max-width: 350px;
+    background-color: #7d7d7d;
+}
+
+.tooltip.right {
+    margin-left: 10px;
+}
+
+    .tooltip.right .tooltip-arrow {
+        left: -5px;
+        margin-top: -10px;
+        border-width: 10px 10px 10px 0px;
+        border-right-color: #7d7d7d;
+    }
+
+
+.text_info {
+    color: #9b9b9b;
+    padding: 8px;
+    font-size: 20px;
+}
+
+
+
+
+
+.modal-head {
+    text-align: center;
+    background-color: #e12126;
+    border-bottom: 0px solid #e5e5e5;
+}
+
+.modaltitle {
+    color: #FFF;
+    margin-top: 2px;
+}
+
+.bodycontent {
+    background-color: #FFF;
+}
+
+.modalfooter {
+    border-top: 0px solid;
+    background-color: #FFF;
+}
+
+.inputinfo {
+    color: red;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.input-icon-color {
+    color: #4A90E2;
+    background-color: #FFF;
+}
+
+.searchbtn {
+    padding: 10px 100px;
+    margin: 15px 0px;
+    background-color: #e12127;
+    font-size: 20px;
+    color: #FFF;
+}
+
+    .searchbtn:focus, .searchbtn:hover {
+        background-color: rgba(225, 33, 39, 0.6) !important;
+        border-color: #b84448 !important;
+        color: #FFF !important;
+        ;
+    }
+
+.alignbox {
+    text-align: center;
+}
+
+.tite-size {
+    font-size: 24px;
+}
+
+.tickicon {
+    text-align: center;
+    font-size: 84px;
+    color: #6ed65b;
+}
+
+.passenger {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 50px;
+    color: #656565;
+}
+
+.flightconfirmation {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #535353;
+    font-weight: bold;
+}
+
+.backarrow {
+    margin: -9px 10px 0px 0px;
+    font-size: 40px;
+}
+
+.back {
+    margin: -30px 0px 0px 0px;
+    font-size: 21px;
+}
+
+.flight-name {
+    font-size: 30px;
+    border-right: 1px solid #c4c3c3;
+    font-weight: bold;
+    margin: 0px 10px 10px 20px;
+    width: 200px;
+}
+
+.trip-details {
+    width: 95px;
+    padding: 0px 20px;
+}
+
+.top-detail {
+    font-size: 16px;
+}
+
+.down-detail {
+    border-bottom: 1px solid #9c9c9c;
+    padding: 7px 7px;
+    font-size: 16px;
+}
+
+.btn-color {
+    background-color: #e12127;
+    border-color: #e12127;
+    color: #FFF;
+}
+
+    .btn-color:hover, .btn-color:focus {
+        background-color: rgba(225, 33, 39, 0.6) !important;
+        border-color: #b84448 !important;
+        color: #FFF !important;
+        ;
+    }
+
+
+#full-row {
+    background-color: #f3f3f3;
+    margin: 0px;
+}
+
+#right {
+    background-color: #f3f3f3;
+}
+
+#left {
+    background-color: #FFF;
+}
+
+.close {
+    opacity: 1;
+}
+
+    .close i {
+        color: #FFF;
+    }
+
+.padding-lr-10 {
+    padding: 0px 10px;
+}
+
+.find-flight-window .modal-body {
+    padding: 15px 0px;
+}
+
+.find-flight-window .flight-trip-details {
+    margin: 0px 0px 20px 0px;
+    border-bottom: 2px solid #c4c3c3;
+}
+
+.find-flight-window .nav-tabs {
+    margin: 0px 50px;
+    background-color: #FFF;
+    border-bottom: none;
+}
+
+    .find-flight-window .nav-tabs > li {
+        width: 9%;
+        text-align: center;
+    }
+
+        .find-flight-window .nav-tabs > li .date {
+            font-weight: bold;
+            display: block;
+        }
+
+        .find-flight-window .nav-tabs > li a {
+            background-color: #f0f0f0;
+            border-color: #dbdbdb;
+            font-size: 13px;
+        }
+
+        .find-flight-window .nav-tabs > li.active {
+            width: 18%;
+        }
+
+            .find-flight-window .nav-tabs > li.active a {
+                background-color: #FFF;
+                border-bottom: none;
+                border-left: none;
+                border-right: none;
+            }
+
+.find-flight-window #previous {
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: #C4c3c3;
+    font-size: 24px;
+    padding: 17px 0px;
+}
+
+.find-flight-window #next {
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color: #C4c3c3;
+    font-size: 24px;
+    padding: 17px 0px;
+}
+
+#order-by-flight {
+    border: none;
+    background-color: #FFF;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+#flight-table {
+    border-top: 2px solid #c4c3c3;
+}
+
+    #flight-table > table > tbody > tr:nth-of-type(odd) {
+        background-color: #FFF;
+    }
+
+    #flight-table > table > tbody > tr:nth-of-type(even) {
+        background-color: #ececec;
+    }
+
+    #flight-table > table > thead > tr > th {
+        vertical-align: bottom;
+        border-bottom: 0px solid #ececec;
+        text-align: center;
+    }
+
+    #flight-table > table {
+        background-color: #ececec;
+        text-align: center;
+    }
+
+    #flight-table .btn-xs {
+        padding: 2px 15px;
+    }
+
+.win-flight-box {
+    background-color: #FFF;
+    border: 1px solid #e7e6e6;
+    border-radius: 3px;
+    padding: 10px 0px;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.right-border-none {
+    border-right: none;
+}
+
+.model-ative {
+    overflow: hidden;
+}
+
+    .model-ative .modal {
+        background-color: rgba(64, 64, 64, 0.90);
+    }
+
+
+.chat-list {
+    margin-top: 15px;
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+}
+
+.chat-avatar-left {
+    position: absolute;
+    left: 0;
+}
+
+.chat-avatar-right {
+    position: absolute;
+    right: 0;
+}
+
+.chat-message-left {
+    margin-left: 45px;
+}
+
+.chat-message-right {
+    margin-right: 45px;
+}
+
+.chat-message .message {
+    margin-bottom: 10px;
+}
+
+.chat-message-left .message-text {
+    max-width: 310px;
+    background-color: #E8E8E8;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #262626;
+    float: left;
+}
+
+.chat-message-right .message-text {
+    max-width: 310px;
+    background-color: #0b9bff;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #FFF;
+    float: right;
+}
+
+.ask-help {
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0px;
+    font-size: 16px;
+}
+
+#message-enter-group {
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+}
+
+@media (max-width:992px) {
+    .chat-list {
+        position: relative;
+    }
+
+    #message-enter-group {
+        position: relative;
+        padding: 0px;
+    }
+}
+
+@media (min-width:992px ) and (max-width:1200px) {
+    .fligth-row > div:nth-of-type(odd) {
+        padding-right: 15px;
+    }
+
+    .fligth-row > div:nth-of-type(even) {
+        padding-left: 15px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .nav-tabs > li > a {
+        font-size: 15px;
+    }
+
+    .win-flight-box {
+        width: auto;
+        position: relative;
+    }
+
+    #confirm-window .nav-tabs {
+        margin: 0px 20px !important;
+    }
+
+    .searchbtn {
+        padding: 10px 20px;
+        margin: 15px 0px;
+        background-color: #e12127;
+        font-size: 20px;
+        color: #FFF;
+    }
+
+    .fligth-row > div:nth-of-type(odd) {
+        padding-right: 15px;
+    }
+
+    .fligth-row > div:nth-of-type(even) {
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        margin-bottom: -2px;
+    }
+}
+
+@media (max-width: 450px) {
+    .flight-box {
+        width: 100%;
+    }
+
+    .flight-box-action .col-xs-3 {
+        width: 50%;
+        padding: 10px 15px;
+    }
+}
+
+.flight-box-action {
+    border-top: 1px solid #e7e6e6;
+    margin-top: 10px;
+    padding: 10px 0px 0px 0px !important;
+}
+
+    .flight-box-action a {
+        font-weight: bold;
+        color: #4a90e2;
+        font-size: 16px;
+    }
+
+th .sorting:before {
+    content: "\f0dc";
+    color: #333;
+    font-size: 15px;
+    padding-top: 0px;
+    margin-top: -3px;
+}
+
+th .sorting-asc:before {
+    content: "\f0de";
+}
+
+th .sorting-desc:before {
+    content: "\f0dd";
+}
+
+.navbar-toggle .fa-bars {
+    font-size: 18px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.white {
+    color: white;
+}
+
+.gray {
+    color: #9c9c9c;
+}
+.gray-dark{
+   color:#4a4a4a;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+.width-5p {
+    width: 5% !important;
+}
+.width-50 {
+    width: 50px;
+}
+.bg-white{
+    background-color:#FFF;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+padding-10-30 {
+    padding: 10px 30px;
+}
+
+#callingWindow .modal-header {
+    border-bottom: 0px;
+    text-align: center;
+}
+
+    #callingWindow .modal-header .label {
+        margin: 0px;
+        position: relative;
+    }
+
+#callingWindow .modal-body {
+    margin-top: -10px;
+}
+
+    #callingWindow .modal-body .avatar {
+        border-radius: 100%;
+        width: 189px;
+    }
+
+.user-confrim {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+td .fa-phone {
+    padding: 5px 7px;
+}
+
+#person-details{
+    background-color: #7d7d7d;
+    text-align: center;
+    padding: 20px;
+}
+
+#person-details .avatar{
+     width: 79px;
+     border-radius: 100%;
+}
+#person-details .fa-comment{
+    padding:10px;
+    margin: 25px 15px 25px 15px;
+}
+
+#person-details .fa-video-camera{
+    padding:10px;
+    margin: 25px 15px 25px 15px;
+}
+
+.calling-list .text_info{
+    padding:8px 0px;
+}
+
+#remote-media{
+    display:none;
+}

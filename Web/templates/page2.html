@@ -1,0 +1,371 @@
+﻿<section class="bg-white">
+    <div class="row" id="full-row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 align" id="left">
+            <div class=" col-xs-12" id="person-details">
+                <div class="label label-warning premiere pull-right">{{user.accountStatus}}</div>
+                <div class="clearfix"></div>
+                <div>
+                    <img class="avatar" ng-src="{{user.avatar}}"/>
+                </div>
+                <div class="name">
+                    <span class="agent-name">{{user.name}}</span>
+                </div>
+                <div class="ac-no">
+                    <span>Account Number: {{user.accountNumber}}</span>
+                </div>
+                <div class="phone-no">
+                    <span>Phone Number: {{user.phoneNumber}}</span>
+                </div>
+                <div class="time">
+                    <span id="call-timer">00:00</span>
+                </div>
+                <div>
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-comment fa-icon fa-2x"></i>
+                    </a>
+                    <a href="javascript:void(0);">
+                        <i class="fa fa-video-camera fa-icon fa-2x"></i>
+                    </a>
+                    <a href="javascript:void(0);" id="call-muted" ng-click="callMuted()">
+                        <i class="fa fa-microphone fa-micro-icon fa-icon fa-2x "></i>
+                    </a>
+                    <a href="javascript:void(0);" id="call-cancel" ng-click="disconnect()">
+                        <i class="fa fa-phone fa-phone-icon fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-12 calling-list">
+                <div class="col-xs-12 text-center" ng-repeat="call in user.callHistory">
+                    <div class="date-time-border"></div>
+                    <span class="date-time">
+                        {{call.date | date : 'MM/dd/yyyy'}}
+                    </span>
+
+                    <div class="col-xs-12 text-right text_info" ng-repeat="duration in call.duration">
+                        <span class="gray-drak">Call,</span><span>{{duration}}</span>
+                        <i class="fa fa-phone fa-phonecall fa-2x"></i><br />
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 chat-list" style="display:none">
+                <div class="col-xs-12 text-center">
+                    <span class="date-time">
+                        05/13/2015, 4:42 PM
+                    </span>
+                </div>
+                <div class="col-xs-12 margin-top-15">
+                    <div class="pull-left chat-avatar-left">
+                        <img src="images/avatar2.png" class="width-50"/>
+                    </div>
+                    <div class="pull-left chat-message-left">
+                        <div class="message">
+                            <div class="message-text">Could you change my flight from Dallas to Las Vegas to May 08 as my change of plan?</div>
+                        </div>
+                        <div class="message">
+                            <div class="message-text">Thanks!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="pull-right chat-avatar-right">
+                        <img src="images/avatar.png" class="width-50"/>
+                    </div>
+                    <div class="pull-right chat-message-right">
+                        <div class="message">
+                            <div class="message-text">Sure, I will do that in a moment</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12" id="message-enter-group">
+                    <div class="input-group serach-input-group">
+                        <input type="text" id="message-enter" class="form-control" placeholder="Type a message..." aria-describedby="message-enter-addon">
+                        <span class="input-group-addon input-icon-color" id="message-enter-addon">Send</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7  align" id="right">
+            <div role="tabpanel">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="javascript:void(0);" data-target="#context" aria-controls="home" role="tab" data-toggle="tab">Context</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="javascript:void(0);" data-target="#flights" aria-controls="profile" role="tab" data-toggle="tab">Flights</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="javascript:void(0);" data-target="#profile" aria-controls="messages" role="tab" data-toggle="tab">Profile</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="javascript:void(0);" data-target="#history" aria-controls="settings" role="tab" data-toggle="">History</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="javascript:void(0);" data-target="#notes" aria-controls="settings" role="tab" data-toggle="">Notes</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="context">
+                        <div class="row content-title">
+                            <div class="col-xs-12 title-text">Reason</div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light"> <span class="agent-name">{{user.name}}</span> is calling to </span>
+                                <span class="content-text-black ">change flight</span>
+                            </div>
+                        </div>
+                        <div class="row content-title">
+                            <div class="col-xs-12 title-text ">Flight Record</div>
+                            <div class="col-xs-12">
+                                <div class="col-xs-6 flight-box" ng-click="openFlightSerach()">
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-6 title">
+                                            Owl Air
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="pull-right">
+                                                <div class="light-title">GATE</div>
+                                                <div class="text-right font-14">{{user.flight.gate}}</div>
+                                            </div>
+                                            <div class="pull-right">
+                                                <div class="light-title">FLIGHT</div>
+                                                <div class="text-right font-14">{{user.flight.number}}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-5">
+                                            <div class="light-title">{{user.flight.from}}</div>
+                                            <div class="font-35">{{user.flight.fromShort}}</div>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <div class="plane-icon">
+                                                <i class="fa fa-plane fa-rotate-45"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-5">
+                                            <div class="light-title text-right">{{user.flight.to}}</div>
+                                            <div class="font-35 text-right">{{user.flight.toShort}}</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-6">
+                                            <div class="light-title">Departure</div>
+                                            <div class="font-18" id="flight-departure">{{user.flight.departure | date : 'EEE, MMM dd'}}</div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="light-title text-right">Arrival</div>
+                                            <div class="font-18 text-right" id="flight-arrival">{{user.flight.arrival | date : 'EEE, MMM dd'}}</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-3">
+                                            <div class="light-title">Boards</div>
+                                            <div class="font-14" id="flight-boards">{{user.flight.boards}}</div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="light-title">Departs</div>
+                                            <div class="font-14" id="flight-departs">{{user.flight.departs}}</div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="light-title text-right">Group</div>
+                                            <div class="font-14 text-right">{{user.flight.group}}</div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <div class="light-title text-right">Position</div>
+                                            <div class="font-18 text-right">{{user.flight.position}}</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-6">
+                                            <div class="light-title">Passenger</div>
+                                            <div class="font-14 agent-name">{{user.name}}</div>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <div class="light-title text-right">Passenger</div>
+                                            <div class="font-14 text-right">{{user.flight.passenger}}</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 flight-box-action">
+                                        <div class="col-xs-3">
+                                            <a href="javascript:void(0);">Change</a>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <a href="javascript:void(0);">Upgrade</a>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <a href="javascript:void(0);">Check in</a>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <a href="javascript:void(0);">Cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row content-title">
+                            <div class="col-xs-12 title-text">Basic Information</div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">
+                                    User Name:
+                                    <span class="edit-userName">
+                                        <span class="user-name-change">{{user.userName}}</span>
+                                        <a href="javascript:void(0);" class="profile-edit">Edit</a>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Full Name: <span class="agent-name">{{user.name}}</span></span>
+                            </div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Date of Birth: {{user.dob | date : 'MMM dd yyyy' }}</span>
+                            </div>
+                        </div>
+                        <div class="row content-title">
+                            <div class="col-xs-12 title-text">Contact Information</div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Address: {{user.address}}</span>
+                            </div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Email: <span class="email-id-chage">{{user.email}}</span></span>
+                            </div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Phone: {{user.phoneNumber}}</span>
+                            </div>
+                        </div>
+                        <div class="row content-title">
+                            <div class="col-xs-12 title-text">Travel Information</div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Account Number: {{user.accountNumber}}</span>
+                            </div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Rewards: {{user.rewards | number}} Miles</span>
+                            </div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Frequent Flyer Number: {{user.flyerNumber}} </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="flights">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="input-group serach-input-group">
+                                    <span class="input-group-addon input-icon-color" id="serach-flight-addon"><i class="fa fa-search"></i></span>
+                                    <input type="text" id="serach-flight" ng-model="searchFlight" class="form-control" placeholder="Search" aria-describedby="serach-flight-addon">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 date-row"  ng-repeat="flightbyMonth in user.flights ">
+                                <div class="date-border"></div>
+                                <div class="date  today-f3">
+                                    {{flightbyMonth.date | date: "MM/dd/yyyy"}}
+                                </div>
+                                <div class="col-xs-12 fligth-row" >
+                                    <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6" ng-repeat="flight in flightbyMonth.cards | filter: searchFlight">
+                                        <div class="panel panel-default">
+
+                                            <div class="panel-heading">
+                                                <div class="pull-right text-right">
+                                                    <i class="fa fa-angle-right"></i>
+                                                </div>
+                                                <div class="pull-right text-right">
+                                                    <span class="today-f2">{{flight.date | date: "MMM dd, yyyy"}}</span>
+                                                </div>
+                                                <span class="title">{{flight.place}}</span>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-xs-8">
+                                                        <div class="col-xs-12  padding-0">
+                                                            <span class="short-code">{{flight.from}}</span>
+                                                            <span><i class="fa fa-plane fa-rotate-45"></i></span>
+                                                            <span class="short-code">{{flight.to}}</span>
+                                                        </div>
+                                                        <div class="col-xs-4  padding-0">
+                                                            <div class="filght-title">On Time</div>
+                                                            <div class="filght-details">{{flight.time}}</div>
+                                                        </div>
+                                                        <div class="col-xs-4  padding-0">
+                                                            <div class="filght-title">Flight</div>
+                                                            <div class="filght-details">{{flight.number}}</div>
+                                                        </div>
+                                                        <div class="col-xs-4  padding-0">
+                                                            <div class="filght-title">Gate</div>
+                                                            <div class="filght-details">{{flight.gate}}</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4 padding-0">
+                                                        <div class="col-xs-6 padding-0">
+                                                            <div class="pas-title">Group</div>
+                                                            <div class="pas-details">{{flight.group}}</div>
+                                                        </div>
+                                                        <div class="col-xs-6 padding-0">
+                                                            <div class="pas-title">Postion</div>
+                                                            <div class="pas-details">{{flight.postion}}</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile">
+                        <div class="row content-title">
+                            <div class="col-xs-12 title-text">Basic Information</div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">
+                                    User Name:
+                                    <span class="edit-userName">
+                                        <span class="user-name-change">{{user.userName}}</span>
+                                        <a href="javascript:void(0);" class="profile-edit">Edit</a>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Full Name: <span class="agent-name">{{user.name}}</span> </span>
+                            </div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Date of Birth: {{user.dob | date : 'MMM dd yyyy' }}</span>
+                            </div>
+                        </div>
+                        <div class="row content-title">
+                            <div class="col-xs-12 title-text">Contact Information</div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Address: {{user.address}}</span>
+                            </div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Email: <span class="email-id-chage">{{user.email}}</span> </span>
+                            </div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Phone: {{user.phoneNumber}}</span>
+                            </div>
+                        </div>
+                        <div class="row content-title">
+                            <div class="col-xs-12 title-text">Travel Information</div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Account Number: {{user.accountNumber}}</span>
+                            </div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Rewards: {{user.rewards | number}} Miles</span>
+                            </div>
+                            <div class="col-xs-12">
+                                <span class="content-text-light">Frequent Flyer Number: {{user.flyerNumber}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="history">
+                        history.
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="notes">notes</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+    

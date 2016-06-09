@@ -1,0 +1,14 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, “8.4”
+
+target 'Owl Air' do
+pod 'Reachability'
+pod 'RESideMenu', '~> 4.0.7'
+pod 'TGLStackedViewController', '~> 1.0'
+pod 'Firebase', '~> 2.3.2'
+source 'https://github.com/CocoaPods/Specs.git'
+
+pod ‘Flurry-iOS-SDK/FlurrySDK’
+source 'https://github.com/twilio/cocoapod-specs'
+pod 'TwilioConversationsClient'
+end

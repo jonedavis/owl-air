@@ -1,0 +1,173 @@
+﻿{
+    "accountStatus": "PREMIERE",
+    "name": "Jeff Lawson",
+    "accountNumber": "1234567",
+    "avatar": "images/photo-jefflawson.png",
+    "phoneNumber": "(123) 456-7890",
+    "userName": "Jeff1966",
+    "dob": "1956-07-29T00:00:00.000Z",
+    "address": "1247 Lawrrance Station Rd,San Francisco, CA 94085",
+    "email": "jefflawson@gmail.com",
+    "rewards": 45000,
+    "flyerNumber": "AK947",
+    "callHistory": [
+        {
+            "date": "2015-03-01T00:00:00.000Z",
+            "duration": [
+                "10min 19s",
+                "08min 19s"
+            ]
+        },
+        {
+            "date": "2015-03-01T00:00:00.000Z",
+            "duration": [
+                "5min 19s"
+            ]
+        }
+    ],
+    "flight": {
+        "number": 947,
+        "gate": "B6",
+        "from": "DALLAS",
+        "fromShort": "DAL",
+        "to": "LAS VEGAS",
+        "toShort": "LAS",
+        "departure": "2015-06-02T00:00:00.000Z",
+        "arrival": "2015-06-02T00:00:00.000Z",
+        "boards": "3:30PM",
+        "departs": "4:00PM",
+        "group": "A",
+        "position": 15,
+        "passenger": "A-List"
+    },
+    "flights": [
+        {
+            "date": "2015-05-02T00:00:00.000Z",
+            "cards": [
+                {
+                    "date": "2015-05-02T00:00:00.000Z",
+                    "month": "2015-05",
+                    "place": "Las Vegas",
+                    "from": "SFO",
+                    "to": "LAS",
+                    "group": "A",
+                    "posotion": 15,
+                    "time": "3:30PM",
+                    "number": "947",
+                    "gate": "B6"
+                }
+            ]
+        },
+        {
+            "date": "2015-04-05T00:00:00.000Z",
+            "cards": [
+                {
+                    "date": "2015-04-05T00:00:00.000Z",
+                    "month": "2015-04",
+                    "place": "Las Vegas",
+                    "from": "LAS",
+                    "to": "DAL",
+                    "group": "B",
+                    "posotion": 20,
+                    "time": "3:30PM",
+                    "number": "435",
+                    "gate": "B6"
+                },
+                {
+                    "date": "2015-04-15T00:00:00.000Z",
+                    "month": "2015-04",
+                    "place": "Dallas",
+                    "from": "DAL",
+                    "to": "LAS",
+                    "group": "B",
+                    "posotion": 20,
+                    "time": "9:30PM",
+                    "number": "435",
+                    "gate": "D3"
+                },
+                {
+                    "date": "2015-04-18T00:00:00.000Z",
+                    "month": "2015-04",
+                    "place": "Los Angeles",
+                    "from": "LAS",
+                    "to": "LA",
+                    "group": "A",
+                    "posotion": 15,
+                    "time": "3:30PM",
+                    "number": "947",
+                    "gate": "B6"
+                },
+                {
+                    "date": "2015-04-15T00:00:00.000Z",
+                    "month": "2015-04",
+                    "place": "San Francisco",
+                    "from": "LA",
+                    "to": "SFO",
+                    "group": "A",
+                    "posotion": 12,
+                    "time": "9:30PM",
+                    "number": "867",
+                    "gate": "D3"
+                }
+            ]
+        },
+        {
+            "date": "2015-03-02T00:00:00.000Z",
+            "cards": [
+                {
+                    "date": "2015-03-02T00:00:00.000Z",
+                    "month": "2015-03",
+                    "place": "Chicago",
+                    "from": "SFO",
+                    "to": "CHI",
+                    "group": "A",
+                    "posotion": 10,
+                    "time": "3:30PM",
+                    "number": "628",
+                    "gate": "B6"
+                },
+                {
+                    "date": "2015-03-02T00:00:00.000Z",
+                    "month": "2015-03",
+                    "place": "San Francisco",
+                    "from": "CHI",
+                    "to": "SFO",
+                    "group": "A",
+                    "posotion": 12,
+                    "time": "9:30PM",
+                    "number": "628",
+                    "gate": "D3"
+                }
+            ]
+        },
+        {
+            "date": "2015-02-05T00:00:00.000Z",
+            "cards": [
+                {
+                    "date": "2015-02-05T00:00:00.000Z",
+                    "month": "2015-02",
+                    "place": "San Francisco",
+                    "from": "CHI",
+                    "to": "SFO",
+                    "group": "A",
+                    "posotion": 12,
+                    "time": "9:30PM",
+                    "number": "628",
+                    "gate": "D3"
+                },
+                {
+                    "date": "2015-02-02T00:00:00.000Z",
+                    "month": "2015-02",
+                    "place": "Las Vegas",
+                    "from": "SFO",
+                    "to": "LAS",
+                    "group": "A",
+                    "posotion": 15,
+                    "time": "9:30PM",
+                    "number": "235",
+                    "gate": "B6"
+                }
+            ]
+        }
+    ]
+}

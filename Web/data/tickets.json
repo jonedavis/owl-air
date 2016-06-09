@@ -1,0 +1,58 @@
+﻿[
+  {
+    "status": 1,
+    "subjectIcon": "chat",
+    "subject": "(2) Can you change...",
+    "customer": "Diego Li",
+    "updated": "1hr ago",
+    "assigned": "General",
+    "priority": 4,
+    "caseId": 3,
+    "created": "11:30 am",
+    "closed": null      
+  },{
+    "status": 1,    
+    "subjectIcon": "chat",
+    "subject": "(2)The information...",
+    "customer": "Jenny Chen",
+    "updated": "1hr ago",
+    "assigned": "Joanna Jiang",
+    "priority": 9,
+    "caseId": 2,
+    "created": "2h ago",
+    "closed": null      
+  },{
+    "status": 2,    
+    "subjectIcon": "call",
+    "subject": "(1) Ticket has been...",
+    "customer": "John Goo",
+    "updated": "May 28 2015",
+    "assigned": "General",
+    "priority": 9,
+    "caseId": 4,
+    "created": "May 28 2015",
+    "closed": null      
+  },{
+    "status": 2,
+    "subjectIcon": "chat",
+    "subject": "(2) Your ticket has been...",
+    "customer": "David Li",
+    "updated": "May 26 2015",
+    "assigned": "General",
+    "priority": 4,
+    "caseId": 2,
+    "created": "May 26 2015",
+    "closed": null      
+  },{
+    "status": 3,
+    "subjectIcon": "chat",
+    "subject": "The flight changed for...",
+    "customer": "Akira Gu",
+    "updated": "May 24 2015",
+    "assigned": "Joanna Jiang",
+    "priority": 4,
+    "caseId": 1,
+    "created": "May 24 2015",
+    "closed": "May 28 2015"      
+  }
+]

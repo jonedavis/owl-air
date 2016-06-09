@@ -1,0 +1,101 @@
+﻿<section class="menu col-xs-12">
+    <div class="row">
+        <div class="col-xs-12 padding-l-23">
+            <div class="btn-group " role="group" aria-label="...">
+                <div class="btn-group btn-group-lg" role="group" aria-label="...">
+
+                    <button type="button" class="btn btn-default">
+                        <span class="ticket-count">{{tickets.length}}</span><br />
+                        <span class="ticket-text">All Tickets</span>
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        <span class="ticket-count">{{(tickets|filter:{'status':1}).length}}</span><br />
+                        <span class="ticket-text">Open Tickets</span>
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        <span class="ticket-count">{{(tickets|filter:{'status':2}).length}}</span><br />
+                        <span class="ticket-text">Pending Tickets</span>
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        <span class="ticket-count">{{(tickets|filter:{'status':3}).length}}</span><br />
+                        <span class="ticket-text">Closed Tickets</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="clearfix"></div>
+<section>
+        <div class="table-responsive">
+            <table class="table table-striped" id="call-data-table">
+                <thead>
+                    <tr>
+                        <th class="check-box text-center">
+                            <input type="checkbox" class="check-all">
+                        </th>
+                        <th>Status</th>
+                        <th>Subject</th>
+                        <th>Customer</th>
+                        <th>                            
+                            <a href="javascript:void(0);" ng-click="orderByField='updated'; reverseSort = !reverseSort">
+                                Updated
+                                <span ng-show="orderByField == 'updated'">
+                                    <i class="fa fa-caret-down" ng-class="{'sorting-asc': reverseSort, 'sorting-desc': !reverseSort}"></i>
+                                </span>
+                            </a>
+                        </th>
+                        <th>Assigned</th>
+                        <th>                            
+                            <a href="javascript:void(0);" ng-click="orderByField='priority'; reverseSort = !reverseSort">
+                                Priority
+                                <span ng-show="orderByField == 'priority'">
+                                    <i class="fa fa-caret-down" ng-class="{'sorting-asc': reverseSort, 'sorting-desc': !reverseSort}"></i>
+                                </span>
+                            </a>
+                        </th>
+                        <th>                           
+                            <a href="javascript:void(0);" ng-click="orderByField='caseId'; reverseSort = !reverseSort">
+                                Case ID
+                                <span ng-show="orderByField == 'caseId'">
+                                    <i class="fa fa-caret-down" ng-class="{'sorting-asc': reverseSort, 'sorting-desc': !reverseSort}"></i>
+                                </span>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="javascript:void(0);" ng-click="orderByField='created'; reverseSort = !reverseSort">
+                                Created
+                                <span ng-show="orderByField == 'created'">
+                                    <i class="fa fa-caret-down" ng-class="{'sorting-asc': reverseSort, 'sorting-desc': !reverseSort}"></i>
+                                </span>
+                            </a>                            
+                        </th>
+                        <th>Closed</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr ng-repeat="ticket in tickets | orderBy:orderByField:reverseSort">
+                        <td class="text-center"><input type="checkbox" class="check"></td>
+                        <td class="text-center">
+                            <span class="ticket-status ticket-open" ng-if="ticket.status==1">O</span>
+                            <span class="ticket-status pending" ng-if="ticket.status==2">P</span>
+                            <span class="ticket-status closed" ng-if="ticket.status==3">C</span>
+                        </td>
+                        <td ng-click="openCall()">
+                            <i class="fa fa-comment fa-icon" ng-if="ticket.subjectIcon=='chat'"></i>
+                            <i class="fa fa-phone fa-icon" ng-if="ticket.subjectIcon=='call'"></i>
+                            {{ticket.subject}}
+                        </td>
+                        <td>{{ticket.customer}}</td>
+                        <td>{{ticket.updated}}</td>
+                        <td>{{ticket.assigned}}</td>
+                        <td>{{ticket.priority}}</td>
+                        <td>{{ticket.caseId}}</td>
+                        <td>{{ticket.created}}</td>
+                        <td>{{ticket.closed}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</section>

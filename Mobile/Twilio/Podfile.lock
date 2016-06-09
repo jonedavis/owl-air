@@ -1,0 +1,28 @@
+PODS:
+  - Firebase (2.3.3)
+  - Flurry-iOS-SDK/FlurrySDK (7.6.0)
+  - Reachability (3.2)
+  - RESideMenu (4.0.7)
+  - TGLStackedViewController (1.1.1)
+  - TwilioCommon (0.2.1)
+  - TwilioConversationsClient (0.23.0):
+    - TwilioCommon (~> 0.2.0)
+
+DEPENDENCIES:
+  - Firebase (~> 2.3.2)
+  - Flurry-iOS-SDK/FlurrySDK
+  - Reachability
+  - RESideMenu (~> 4.0.7)
+  - TGLStackedViewController (~> 1.0)
+  - TwilioConversationsClient
+
+SPEC CHECKSUMS:
+  Firebase: 2db60272f68ce40c7d47e5ae6eddc16977c65d4c
+  Flurry-iOS-SDK: 9822fe709195f0e3ae3e52c785eee9ff651ff648
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  RESideMenu: f24c508404b49c667344c54aba7e590883533958
+  TGLStackedViewController: 03f148b6639067c527014a0a9d595f8a5f9548d9
+  TwilioCommon: a2dbaf7c080c9fa8f69f9a0605be965501c87334
+  TwilioConversationsClient: 540993cff9d0e0bfd34b7b2354eeee66ed0696cb
+
+COCOAPODS: 0.39.0
